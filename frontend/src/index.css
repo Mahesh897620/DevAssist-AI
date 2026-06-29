@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* Base reset / font */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Prose: render markdown line-breaks and bold/code in chat messages */
+.prose-chat p  { margin: 0 0 0.5em; }
+.prose-chat p:last-child { margin-bottom: 0; }
+.prose-chat strong { font-weight: 600; }
+.prose-chat code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.8em;
+  background: rgba(0,0,0,.06);
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+}
+.prose-chat pre {
+  background: #1e1e2e;
+  color: #cdd6f4;
+  padding: 1em;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 0.8em;
+  margin: 0.5em 0;
+}
+.prose-chat ul, .prose-chat ol { padding-left: 1.5em; margin: 0.4em 0; }
+.prose-chat li { margin-bottom: 0.2em; }
