@@ -17,8 +17,9 @@ export default defineConfig({
     },
   },
   build: {
-    // Output directly into the backend's static folder
-    outDir: '../Downloads/DevAssist AI/Backend/static',
+    // Outputs into Backend/static/ so FastAPI can serve it directly
+    outDir: '../Backend/static',
     emptyOutDir: true,
   },
 });
+
